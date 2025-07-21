@@ -34,7 +34,7 @@ if uploaded_file is not None:
     Polcurve = polcurvefit(E, I, sample_surface=1E-4)
     
     # Perform the active polarization curve fit
-    popt, E_corr, I_corr, anodic_slope, cathodic_slope, r_square = Polcurve.active_pol_fit(window=[-0.1, 0.1])
+    popt, E_corr, I_corr, anodic_slope, cathodic_slope, r_square = Polcurve.active_pol_fit(window=[-0.6, -0.17])
 
     # Display results
     st.write("Fitted Parameters:")
